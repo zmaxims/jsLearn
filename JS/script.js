@@ -1,7 +1,21 @@
 "use strict";
 
-const cat = 'toys';
-console.log(`http://test/com${cat}/10`);
+const numberOfFilms  =  +prompt(`Сколько  фильмов`,"");
 
-const name = 'Vika';
-alert(`Привет, ${name}`);
+const  personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
+
+const a = prompt(`Последний фильм`,"");
+const b = prompt("Ваша Оценка");
+const c = prompt(`Последний фильм`,"");
+const d = prompt("Ваша Оценка");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
