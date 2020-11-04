@@ -25,31 +25,34 @@ function rememberMyFilms() {
         const b = prompt("Ваша Оценка");
 
         if (a != null && b != null && a != '' && b != "" && b.length < 50) {
-            personalMovieDB.movies[a] = b;
-            else
-                i--;
+            personalMovieDB.movies[a] = b;}
+            else {
+                i--;}
+                
         }
     }
-}
+
 
 rememberMyFilms();
 
 function detectPersonalLevel() {
     if (personalMovieDB.count < 10) {
-        Console.log("Мало фильмов");
 
+        console.log("Мало фильмов");
+    }
         else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-            Console.log("Нормально фильмов");\
-
-            else if (personalMovieDB.count >= 30) {
-                console.log("Дохуя фильмов");
-                else
-                    console.log("Ошибка");
-            }
+            console.log("Нормально фильмов");
         }
 
-    }
-}
+        else if (personalMovieDB.count >= 30) {
+                console.log("Дохуя фильмов");
+            }
+        else{
+                console.log("Ошибка");
+            }
+                    
+            }
+    
 
 
 detectPersonalLevel();
